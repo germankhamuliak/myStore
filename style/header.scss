@@ -1,0 +1,136 @@
+.header {
+    padding-top: 10px;
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      &:after {
+        content: "";
+        max-width: 1140px;
+        width: calc(100% - 30px);
+        height: 2px;
+        background-color: $line_color;
+        display: block;
+        position: absolute;
+        bottom: -15px;
+      }
+    }
+    &__menu {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__link {
+      padding: 10px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: $link_color;
+      }
+    }
+    &__contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__map {
+      display: flex;
+  
+      &-svg {
+        width: 20px;
+        height: 20px;
+        fill: $main_color;
+      }
+      &-text {
+        margin-left: 5px;
+      }
+    }
+    &__tel {
+      margin-left: 20px;
+      &-img {
+        width: 24px;
+        height: 24px;
+        transform: translate(0, 5px);
+      }
+      &-text {
+        margin-left: 5px;
+        font-size: 24px;
+      }
+      & a {
+        color: $text_color;
+        span {
+          color: $main_color;
+        }
+      }
+    }
+  }
+  .sub-header {
+    margin: 30px 0 20px;
+    box-shadow: 0 4px 10px -10px rgb(40 40 40 / 30%);
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+    &__logo {
+      width: 150px;
+      height: 50px;
+    }
+    &__form {
+      position: relative;
+      margin-right: 320px;
+    }
+    &__search {
+      border: 2px solid $main_color;
+      border-radius: 5px;
+      height: 40px;
+      width: 400px;
+      padding-left: 20px;
+      font-size: 18px;
+      &:focus-visible {
+        outline: none;
+      }
+      &:focus {
+        border-color: $secodary_color;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),
+          0 0 8px rgb(102 175 233 / 60%);
+      }
+    }
+    &__batton {
+      width: 40px;
+      height: 40px;
+      background-color: $main_color;
+      border: none;
+      position: absolute;
+      right: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),
+          0 0 8px rgb(102 175 233 / 60%);
+        background-color: $secodary_color;
+      }
+    }
+    &__svg {
+      width: 18px;
+      height: 18px;
+      fill: $white_color;
+    }
+    &__cort {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      &-img {
+        width: 25px;
+        height: 25px;
+      }
+      &-text {
+        font-size: 15px;
+        margin-left: 5px;
+      }
+    }
+  }

@@ -1,0 +1,29 @@
+
+@import "mixins";
+@import "fonts";
+@import "header";
+@import "main";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.3s linear;
+  color: $text_color;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  color: $text_color;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  font-weight: $norm;
+}
+
+
