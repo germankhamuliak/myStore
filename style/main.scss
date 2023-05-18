@@ -31,7 +31,7 @@
     &__goods {
       display: flex;
       width: 80%;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       h1 {
         font-weight: $max;
@@ -39,7 +39,7 @@
       }
     }
     &__category {
-      width: 45%;
+      width: 49%;
       max-width: 600px;
       background-color: $white_color;
       border-radius: 5px;
